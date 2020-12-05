@@ -7,7 +7,7 @@ use std::{
 };
 
 use fs_err as fs;
-use image::{DynamicImage, GenericImageView, ImageError, imageops, codecs::png::PngEncoder};
+use image::{codecs::png::PngEncoder, imageops, DynamicImage, GenericImageView, ImageError};
 use packos::{InputItem, SimplePacker};
 use thiserror::Error;
 use walkdir::WalkDir;

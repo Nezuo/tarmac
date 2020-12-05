@@ -4,7 +4,7 @@
 
 use std::collections::VecDeque;
 
-use image::{DynamicImage, Rgba, GenericImage, GenericImageView};
+use image::{DynamicImage, GenericImage, GenericImageView, Rgba};
 
 pub(crate) fn alpha_bleed(img: &mut DynamicImage) {
     let (w, h) = img.dimensions();
@@ -94,7 +94,7 @@ pub(crate) fn alpha_bleed(img: &mut DynamicImage) {
             (new_color.0 / contributing) as u8,
             (new_color.1 / contributing) as u8,
             (new_color.2 / contributing) as u8,
-            0
+            0,
         ]);
 
         img.put_pixel(x, y, pixel);

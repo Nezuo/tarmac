@@ -1,6 +1,6 @@
 use fs_err as fs;
 
-use image::{GenericImageView, codecs::png::PngEncoder};
+use image::{codecs::png::PngEncoder, GenericImageView};
 
 use std::borrow::Cow;
 

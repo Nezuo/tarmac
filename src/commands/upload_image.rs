@@ -33,7 +33,7 @@ pub fn upload_image(global: GlobalOptions, options: UploadImageOptions) {
     let mut client = RobloxApiClient::new(Some(auth));
 
     let upload_data = ImageUploadData {
-        image_data: Cow::Owned(encoded_image.to_vec()), //Cow::Owned(image_data),
+        image_data: Cow::Owned(encoded_image.to_vec()),
         name: &options.name,
         description: &options.description,
         group_id: None,
